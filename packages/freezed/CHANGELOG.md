@@ -1,3 +1,11 @@
+## 4.0.1+natlink.1
+
+Natlink fork of 4.0.1 with one fix, pending upstream:
+
+- Restore the `identical` shortcut in the generated `==` for collections
+  wrapped in unmodifiable views: compare the backing fields on both sides, so
+  two instances sharing a collection no longer walk and hash its content.
+
 ## 4.0.1 - 2026-08-29
 
 - Removed the need for `@overrides` in class fields and primary constructors.
